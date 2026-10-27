@@ -1,0 +1,27 @@
+# ===== VietVoiceOmni - phu thuoc cot loi =====
+# Giao dien
+reflex>=0.9.6
+
+# Engine / xu ly audio
+# torch + torchaudio: cai ban CUDA phu hop GPU cua ban, vi du:
+#   pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+torch>=2.6.0
+torchaudio>=2.6.0
+soundfile>=0.13
+numpy>=2.0
+librosa>=0.11
+scipy>=1.15
+einops>=0.8
+
+# Model loader
+transformers>=5.0
+huggingface_hub>=1.0
+safetensors>=0.8
+
+# Tien ich (chup man hinh audit qua CDP, tuy chon)
+websocket-client>=1.8
+
+# ===== Luu y =====
+# Engine VoxCPM2 (openbmb/VoxCPM2) cai theo huong dan goc:
+#   https://huggingface.co/openbmb/VoxCPM2
+# Can ffmpeg trong PATH de xuat MP3 + dieu chinh toc do doc (atempo).

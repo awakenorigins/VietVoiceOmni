@@ -1,0 +1,46 @@
+# ===== Reflex build / runtime =====
+.web/
+.states/
+reflex.lock/
+*.db
+uploaded_files/
+
+# ===== Generated audio / books / refs (large, runtime) =====
+output/
+assets/audio/
+VietVoiceOmni/output/
+VietVoiceOmni/assets/audio/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ===== Logs / scratch =====
+*.log
+compile_check.log
+audit_*.log
+reflex_run*.log
+
+# ===== Model cache (never commit weights) =====
+*.pth
+*.safetensors
+*.ckpt
+models--*/
+
+# ===== OS / editor =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ===== Screenshots: chi giu trong docs/ =====
+*.png
+!docs/screenshots/*.png
+
+# ===== Audit scratch scripts (giu lai cdp_shot.py, audit_*.py) =====
+seed_and_test.py
